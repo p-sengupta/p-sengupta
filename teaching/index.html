@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pritha Sengupta</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <div id="dark-mode-container"></div>
     <div id="navigation-container"></div>
+
     <div class="container">
-        <h1>About</h1>
+        <h1>Teaching</h1>
+        
     </div>
 
-    <script src="js/navigation.js"></script>
+    <script src="../js/navigation.js"></script>
     <script>
-        // Initialize navigation and dark mode for About page
+        // Initialize navigation and dark mode for Teaching page
         document.addEventListener('DOMContentLoaded', function() {
             const darkModeContainer = document.getElementById('dark-mode-container');
             darkModeContainer.appendChild(createDarkModeToggle());
             
             const navContainer = document.getElementById('navigation-container');
-            navContainer.appendChild(createNavigation('about'));
+            navContainer.appendChild(createNavigation('teaching'));
             
             initNavigation();
             initDarkMode();

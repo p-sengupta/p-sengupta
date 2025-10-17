@@ -1,0 +1,282 @@
+/* --- CSS Variables for Dark/Light Mode --- */
+:root {
+    --bg-color: #f5f5f5;
+    --text-color: #333;
+    --container-bg: white;
+    --nav-bg: rgba(255, 255, 255, 0.8);
+    --nav-border: #e6e6e6;
+    --nav-shadow: rgba(0, 0, 0, 0.08);
+    --nav-text: #2c3e50;
+    --nav-hover-bg: #eef5fb;
+    --nav-hover-text: #1f2d3a;
+    --nav-active-bg: #3498db;
+    --nav-active-text: white;
+    --heading-color: #2c3e50;
+    --subheading-color: #34495e;
+    --border-color: #3498db;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --container-bg: #2d2d2d;
+    --nav-bg: rgba(45, 45, 45, 0.8);
+    --nav-border: #404040;
+    --nav-shadow: rgba(0, 0, 0, 0.3);
+    --nav-text: #e0e0e0;
+    --nav-hover-bg: #404040;
+    --nav-hover-text: #ffffff;
+    --nav-active-bg: #3498db;
+    --nav-active-text: white;
+    --heading-color: #ffffff;
+    --subheading-color: #e0e0e0;
+    --border-color: #3498db;
+}
+
+/* --- Dark Mode Toggle --- */
+.dark-mode-toggle {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 1001;
+    background: var(--nav-bg);
+    border: 1px solid var(--nav-border);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 24px var(--nav-shadow);
+    -webkit-backdrop-filter: saturate(140%) blur(8px);
+    backdrop-filter: saturate(140%) blur(8px);
+}
+
+.dark-mode-toggle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 28px var(--nav-shadow);
+}
+
+.dark-mode-toggle svg {
+    width: 18px;
+    height: 18px;
+    color: var(--nav-text);
+    transition: all 0.3s ease;
+}
+
+/* --- Navigation --- */
+.nav {
+    position: fixed;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: var(--nav-bg);
+    border: 1px solid var(--nav-border);
+    border-radius: 999px;
+    box-shadow: 0 8px 24px var(--nav-shadow);
+    -webkit-backdrop-filter: saturate(140%) blur(8px);
+    backdrop-filter: saturate(140%) blur(8px);
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 16px;
+    height: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0 4px;
+}
+
+.nav-links a {
+    display: block;
+    padding: 6px 10px;
+    text-decoration: none;
+    color: var(--nav-text);
+    font-size: 14px;
+    border-radius: 6px;
+    transition: background-color 160ms ease, color 160ms ease;
+    line-height: 1.2;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    background-color: var(--nav-hover-bg);
+    color: var(--nav-hover-text);
+    outline: none;
+}
+
+.nav-links a.active {
+    background-color: var(--nav-active-bg);
+    color: var(--nav-active-text);
+}
+
+.nav-spacer {
+    flex: 1;
+}
+
+.hamburger {
+    display: none;
+    background: var(--nav-bg);
+    border: 1px solid var(--nav-border);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    cursor: pointer;
+    color: var(--nav-text);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 24px var(--nav-shadow);
+    -webkit-backdrop-filter: saturate(140%) blur(8px);
+    backdrop-filter: saturate(140%) blur(8px);
+}
+
+.hamburger:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 28px var(--nav-shadow);
+}
+
+.hamburger:focus-visible {
+    outline: 2px solid var(--nav-active-bg);
+    outline-offset: 2px;
+}
+
+.hamburger svg {
+    width: 18px;
+    height: 18px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 100px 20px 50px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--container-bg);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px var(--nav-shadow);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--heading-color);
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 40px 0 20px;
+    color: var(--subheading-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin: 25px 0 10px;
+    color: var(--heading-color);
+    transition: color 0.3s ease;
+}
+
+/* --- Mobile --- */
+@media (max-width: 768px) {
+    .nav {
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        left: auto;
+        transform: none;
+        width: 40px;
+        height: 40px;
+        background: var(--nav-bg);
+        border: 1px solid var(--nav-border);
+        border-radius: 50%;
+        box-shadow: 0 8px 24px var(--nav-shadow);
+        -webkit-backdrop-filter: saturate(140%) blur(8px);
+        backdrop-filter: saturate(140%) blur(8px);
+    }
+
+    .nav-inner {
+        padding: 0;
+        gap: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 52px;
+        right: 0;
+        background: var(--nav-bg);
+        border: 1px solid var(--nav-border);
+        border-radius: 12px;
+        box-shadow: 0 8px 24px var(--nav-shadow);
+        flex-direction: column;
+        gap: 0;
+        padding: 8px;
+        min-width: 180px;
+        -webkit-backdrop-filter: saturate(140%) blur(8px);
+        backdrop-filter: saturate(140%) blur(8px);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li a {
+        padding: 10px 12px;
+    }
+
+    .nav-spacer {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        padding: 20px;
+        margin: 0 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
