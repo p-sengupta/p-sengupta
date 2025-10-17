@@ -8,9 +8,9 @@
     --nav-shadow: rgba(0, 0, 0, 0.08);
     --nav-text: #2c3e50;
     --nav-hover-bg: #eef5fb;
-    --nav-hover-text: #1f2d3a;
+    --nav-hover-text: #2980b9;
     --nav-active-bg: #3498db;
-    --nav-active-text: white;
+    --nav-active-text: #2980b9;
     --heading-color: #2c3e50;
     --subheading-color: #34495e;
     --border-color: #3498db;
@@ -25,9 +25,9 @@
     --nav-shadow: rgba(0, 0, 0, 0.3);
     --nav-text: #e0e0e0;
     --nav-hover-bg: #404040;
-    --nav-hover-text: #ffffff;
+    --nav-hover-text: #2980b9;
     --nav-active-bg: #3498db;
-    --nav-active-text: white;
+    --nav-active-text: #2980b9;
     --heading-color: #ffffff;
     --subheading-color: #e0e0e0;
     --border-color: #3498db;
@@ -102,25 +102,27 @@
 
 .nav-links a {
     display: block;
-    padding: 6px 10px;
+    padding: 8px 12px;
     text-decoration: none;
     color: var(--nav-text);
     font-size: 14px;
-    border-radius: 6px;
-    transition: background-color 160ms ease, color 160ms ease;
+    font-weight: 500;
+    transition: color 200ms ease;
     line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
-    background-color: var(--nav-hover-bg);
     color: var(--nav-hover-text);
     outline: none;
 }
 
 .nav-links a.active {
-    background-color: var(--nav-active-bg);
     color: var(--nav-active-text);
+    font-weight: 500;
 }
 
 .nav-spacer {
