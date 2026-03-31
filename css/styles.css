@@ -239,7 +239,7 @@ h3 {
         position: absolute;
         top: 52px;
         right: 0;
-        background: var(--nav-bg);
+        background: rgba(255, 255, 255, 0.95);
         border: 1px solid var(--nav-border);
         border-radius: 12px;
         box-shadow: 0 8px 24px var(--nav-shadow);
@@ -261,6 +261,13 @@ h3 {
 
     .nav-spacer {
         display: none;
+    }
+}
+
+/* Dark mode mobile menu */
+@media (max-width: 768px) {
+    [data-theme="dark"] .nav-links {
+        background: rgba(45, 45, 45, 0.95);
     }
 
     .hamburger {
