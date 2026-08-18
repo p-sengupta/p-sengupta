@@ -182,6 +182,17 @@ body {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.about-photo {
+    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center 60%;
+    border-radius: 50%;
+    margin: 0 auto 28px;
+    box-shadow: 0 4px 16px var(--nav-shadow);
+}
+
 h1 {
     font-size: 2.5rem;
     margin-bottom: 30px;
@@ -279,6 +290,12 @@ h3 {
     .container {
         padding: 20px;
         margin: 0 10px;
+    }
+
+    .about-photo {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 20px;
     }
 
     h1 {
