@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pritha Sengupta</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div id="dark-mode-container"></div>
     <div id="navigation-container"></div>
     <div class="container">
-        <h1>About</h1>
+
+        <p>
+            I am a Ph.D. student in the School of Education at the University of California, Irvine, specializing in
+            Education Policy and Social Contexts. My work broadly centers on early childhood education and development.
+            In particular, I focus on the short- and long-run impacts of early childhood interventions and how early
+            skills and environmental contexts shape long-term development. Interested in the causal mechanisms behind
+            skill acquisition, I utilize meta-analytic techniques, structural equation modeling, and econometric causal
+            inference methods in my research.
+        </p>
+
+        <p>Prior to joining UC Irvine, I was a lab manager at the Shusterman Cognitive Development Lab at Wesleyan
+            University, where I explored how play-based interventions promote early numeracy skills. I hold an M.A. in
+            Developmental Psychology from Teachers College, Columbia University, and a B.A. in Psychology (with minors
+            in Anthropology and English Literature) from St. Xavier’s College, Mumbai.
+            Outside of research, you can find me at my weekly trivia night, working through the NYT crossword,
+            gardening, or participating in labor organizing!</p>
     </div>
 
     <script src="js/navigation.js"></script>
     <script>
         // Initialize navigation and dark mode for About page
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const darkModeContainer = document.getElementById('dark-mode-container');
             darkModeContainer.appendChild(createDarkModeToggle());
-            
+
             const navContainer = document.getElementById('navigation-container');
             navContainer.appendChild(createNavigation('about'));
-            
+
             initNavigation();
             initDarkMode();
         });
     </script>
 </body>
+
 </html>
