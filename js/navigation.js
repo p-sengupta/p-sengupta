@@ -23,14 +23,18 @@ function createNavigation(activePage = '') {
     nav.className = 'nav';
     nav.setAttribute('aria-label', 'Primary');
     
+    const brand = document.createElement('a');
+    brand.href = '/';
+    brand.className = 'site-name';
+    brand.textContent = 'Pritha Sengupta';
+
     nav.innerHTML = `
         <div class="nav-inner">
             <ul class="nav-links" id="primaryNav">
                 <li><a href="/" ${activePage === 'about' ? 'class="active"' : ''}>About</a></li>
-                <li><a href="/cv/" ${activePage === 'cv' ? 'class="active"' : ''}>CV</a></li>
                 <li><a href="/research/" ${activePage === 'research' ? 'class="active"' : ''}>Research</a></li>
                 <li><a href="/teaching/" ${activePage === 'teaching' ? 'class="active"' : ''}>Teaching</a></li>
-                <li><a href="/contact/" ${activePage === 'contact' ? 'class="active"' : ''}>Contact</a></li>
+                <li><a href="/cv/" ${activePage === 'cv' ? 'class="active"' : ''}>CV</a></li>
             </ul>
             <div class="nav-spacer"></div>
             <button class="hamburger" id="navToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +45,10 @@ function createNavigation(activePage = '') {
         </div>
     `;
     
-    return nav;
+    const fragment = document.createDocumentFragment();
+    fragment.appendChild(brand);
+    fragment.appendChild(nav);
+    return fragment;
 }
 
 // Navigation functionality
