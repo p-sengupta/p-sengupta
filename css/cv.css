@@ -1,0 +1,28 @@
+.cv-page {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 80vh;
+    min-height: 640px;
+    border: 1px solid var(--nav-border);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--container-bg);
+}
+
+.pdf-viewer iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .pdf-viewer {
+        height: 70vh;
+        min-height: 480px;
+    }
+}
