@@ -65,8 +65,9 @@
     }
 
     .about-sidebar {
-        width: 100%;
-        max-width: 100%;
+        width: 200px;
+        max-width: 55%;
+        margin: 0 auto;
         order: -1;
     }
 }
