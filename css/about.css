@@ -24,7 +24,7 @@
 .about-sidebar {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     flex-shrink: 0;
     width: 340px;
     max-width: 42%;
@@ -41,7 +41,7 @@
 .about-links {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     gap: 8px;
     margin-top: 16px;
     width: 100%;
@@ -50,7 +50,9 @@
 .about-link-row {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 8px;
+    margin-left: auto;
 }
 
 .about-icon {
@@ -58,6 +60,9 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    width: 18px;
+    font-size: 16px;
+    line-height: 1;
     color: var(--nav-text);
 }
 
