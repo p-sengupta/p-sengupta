@@ -82,8 +82,8 @@ function initDarkMode() {
     
     if (!darkModeToggle || !sunIcon || !moonIcon) return;
 
-    // Get saved theme or default to light
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    // Get saved theme or default to dark
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
     updateIcons(savedTheme);
 
