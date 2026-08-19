@@ -40,19 +40,29 @@
 
 .about-links {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 8px;
     margin-top: 16px;
     width: 100%;
 }
 
-.about-link-row {
-    display: flex;
+.about-links a {
+    display: inline-flex;
     align-items: center;
-    justify-content: flex-end;
     gap: 8px;
-    margin-left: auto;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--nav-border);
+    background: var(--nav-bg);
+    box-shadow: 0 2px 8px var(--nav-shadow);
+    color: var(--nav-text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    white-space: nowrap;
 }
 
 .about-icon {
@@ -60,20 +70,9 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    width: 18px;
-    font-size: 16px;
+    width: 16px;
+    font-size: 14px;
     line-height: 1;
-    color: var(--nav-text);
-}
-
-.about-link-row a {
-    color: var(--nav-hover-text);
-    text-decoration: none;
-}
-
-.about-link-row a:hover,
-.about-link-row a:focus-visible {
-    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
