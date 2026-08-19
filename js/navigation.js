@@ -22,11 +22,6 @@ function createNavigation(activePage = '') {
     const nav = document.createElement('nav');
     nav.className = 'nav';
     nav.setAttribute('aria-label', 'Primary');
-    
-    const brand = document.createElement('a');
-    brand.href = '/';
-    brand.className = 'site-name';
-    brand.textContent = 'Pritha Sengupta';
 
     nav.innerHTML = `
         <div class="nav-inner">
@@ -44,11 +39,8 @@ function createNavigation(activePage = '') {
             </button>
         </div>
     `;
-    
-    const fragment = document.createDocumentFragment();
-    fragment.appendChild(brand);
-    fragment.appendChild(nav);
-    return fragment;
+
+    return nav;
 }
 
 // Navigation functionality
