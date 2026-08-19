@@ -33,29 +33,35 @@
 
 .about-links {
     display: flex;
-    gap: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
     margin-top: 16px;
+    width: 100%;
+}
+
+.about-link-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .about-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    flex-shrink: 0;
     color: var(--nav-text);
-    border: 1px solid var(--nav-border);
-    border-radius: 50%;
-    background: var(--nav-bg);
-    box-shadow: 0 8px 24px var(--nav-shadow);
-    transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.about-icon:hover,
-.about-icon:focus-visible {
+.about-link-row a {
     color: var(--nav-hover-text);
-    transform: scale(1.05);
-    outline: none;
+    text-decoration: none;
+}
+
+.about-link-row a:hover,
+.about-link-row a:focus-visible {
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
