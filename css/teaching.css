@@ -1,28 +1,13 @@
 /* Teaching page styles */
 
-.teaching h1 {
-    margin-top: 0;
-}
-
 .teaching h2:first-of-type {
     margin-top: 0;
-}
-
-.teaching-entry {
-    margin-bottom: 28px;
-}
-
-.teaching-entry h3 {
-    margin: 0 0 12px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    line-height: 1.4;
 }
 
 .teaching-list {
     margin: 0;
     padding-left: 1.2em;
-    list-style: none;
+    list-style: disc;
     line-height: 1.6;
 }
 
