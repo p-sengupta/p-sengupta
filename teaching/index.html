@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,8 @@
     <link rel="canonical" href="https://p-sengupta.com/teaching/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Pritha Sengupta | Teaching">
-    <meta property="og:description" content="Teaching experience and courses by Pritha Sengupta, PhD student at UC Irvine.">
+    <meta property="og:description"
+        content="Teaching experience and courses by Pritha Sengupta, PhD student at UC Irvine.">
     <meta property="og:url" content="https://p-sengupta.com/teaching/">
     <meta property="og:image" content="https://p-sengupta.com/assets/me.png">
     <link rel="icon" href="/assets/favicon.ico" sizes="any">
@@ -17,6 +19,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/teaching.css">
 </head>
+
 <body>
     <div id="dark-mode-container"></div>
     <div id="navigation-container"></div>
@@ -27,7 +30,7 @@
 
         <div class="teaching-entry">
             <h3>Fall 2024, Spring 2026 - Lab Instructor for Ed 15: Statistics for Education Research</h3>
-            <ul class="teaching-list">
+            <!-- <ul class="teaching-list">
                 <li>
                     “Pritha is skilled at summarizing lecture content in an easily comprehensible format. After grading
                     assessments, Pritha always noticed what we needed improvements on and helped us work through examples in
@@ -40,45 +43,45 @@
                     was studying for the midterm in the morning before the midterm she emailed me back in time which helped
                     me understand frequency distributions.”
                 </li>
-            </ul>
+            </ul> -->
         </div>
 
         <div class="teaching-entry">
             <h3>Winter 2025 - Ed 173 / Psy Beh 192: Cognition &amp; Learning in Educational Settings</h3>
-            <ul class="teaching-list">
+            <!-- <ul class="teaching-list">
                 <li>
                     “The TA was very approachable and helpful. Her presence as a TA was clearly made known to students. She
                     was always in class, so she was very accessible to students who could not make it to office hours.”
                 </li>
-            </ul>
+            </ul> -->
         </div>
 
         <div class="teaching-entry">
             <h3>Spring 2025 - Ed 146: Education, Learning &amp; Culture</h3>
-            <ul class="teaching-list">
+            <!-- <ul class="teaching-list">
                 <li>
                     “I did not interact as much with TA Sengupta but she would constantly engage in group discussions and
                     would try to get all group members to be involved. She would also make sure we understood the content at
                     hand by asking us questions.”
                 </li>
-            </ul>
+            </ul> -->
         </div>
 
         <h2>Graduate Teaching</h2>
 
         <div class="teaching-entry">
             <h3>Summer 2025 - Ed 245: Learning Inside &amp; Outside School</h3>
-            <ul class="teaching-list">
+            <!-- <ul class="teaching-list">
                 <li>
                     “She worked well with the professor and it was clear with the way she supported my classmates and I
                     during class! I enjoyed the activities that she worked to create with the professor.”
                 </li>
-            </ul>
+            </ul> -->
         </div>
 
         <div class="teaching-entry">
             <h3>Summer 2025 - Ed 358: Media and Information Literacy</h3>
-            <ul class="teaching-list">
+            <!-- <ul class="teaching-list">
                 <li>
                     “Pritha is incredibly capable, helpful, and knowledgeable about the field of education. She's very
                     responsive to the needs of students, and we all knew we could count on her to assist in our learning and
@@ -86,16 +89,21 @@
                     different instructors over two summer sessions, I can confidently say she can work well with anyone, and
                     help foster an encouraging, educational environment in any circumstance.”
                 </li>
-            </ul>
+            </ul> -->
         </div>
 
         <h2>Invited Talks</h2>
-        <ul class="teaching-list">
+        <!-- <ul class="teaching-list">
             <li>
                 “Play-based pedagogies to encourage math talk in preschool classrooms” - Educational Gaming Lab:
                 Game-Based Pedagogy Approaches, Wesleyan University (Spring, 2023 and Spring 2024)
             </li>
-        </ul>
+        </ul> -->
+
+        <div class="teaching-entry">
+            <h3> “Play-based pedagogies to encourage math talk in preschool classrooms” - Educational Gaming Lab:
+                Game-Based Pedagogy Approaches, Wesleyan University (Spring, 2023 and Spring 2024)</h3>
+        </div>
 
         <p class="teaching-evals">
             All teaching evaluations can be found
@@ -107,16 +115,17 @@
     <script src="../js/navigation.js"></script>
     <script>
         // Initialize navigation and dark mode for Teaching page
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const darkModeContainer = document.getElementById('dark-mode-container');
             darkModeContainer.appendChild(createDarkModeToggle());
-            
+
             const navContainer = document.getElementById('navigation-container');
             navContainer.appendChild(createNavigation('teaching'));
-            
+
             initNavigation();
             initDarkMode();
         });
     </script>
 </body>
+
 </html>
