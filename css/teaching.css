@@ -1,33 +1,50 @@
-/* Teaching page styles */
-
 .teaching h2:first-of-type {
     margin-top: 0;
 }
 
 .teaching-list {
     margin: 0;
-    padding-left: 1.2em;
-    list-style: disc;
-    line-height: 1.6;
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
 }
 
 .teaching-list li {
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 }
 
 .teaching-list li:last-child {
     margin-bottom: 0;
 }
 
-.teaching-evals {
-    margin: 28px 0 0;
+.teaching-course {
+    font-weight: 700;
+    color: var(--heading-color);
 }
 
-.teaching-evals a:link,
-.teaching-evals a:visited,
-.teaching-evals a:hover,
-.teaching-evals a:focus-visible,
-.teaching-evals a:active {
+.teaching-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.teaching-meta span + span::before {
+    content: "";
+    display: inline-block;
+    width: 0.28em;
+    height: 0.28em;
+    margin: 0 0.55em;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.55;
+    vertical-align: middle;
+}
+
+.teaching-evals {
+    margin-top: 28px;
+}
+
+.teaching-evals a {
     color: #465c98;
     text-decoration: underline;
 }
