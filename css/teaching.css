@@ -44,10 +44,5 @@
 .teaching-evals a:focus-visible,
 .teaching-evals a:active {
     color: #465c98;
-    text-decoration: none;
-}
-
-.teaching-evals a:hover,
-.teaching-evals a:focus-visible {
     text-decoration: underline;
 }
