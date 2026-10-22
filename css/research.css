@@ -1,1 +1,62 @@
-/* Research page styles */
+.research h2:first-of-type {
+    margin-top: 0;
+}
+
+.research-list {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.research-item {
+    margin-bottom: 20px;
+}
+
+.research-item:last-child {
+    margin-bottom: 0;
+}
+
+.research-title {
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+.research-title a {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+}
+
+.research-title a:hover,
+.research-title a:focus-visible {
+    color: var(--nav-hover-text);
+}
+
+.research-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.research-meta span + span::before,
+.research-wip .research-title::before {
+    content: "";
+    display: inline-block;
+    width: 0.28em;
+    height: 0.28em;
+    margin: 0 0.55em;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.55;
+    vertical-align: middle;
+}
+
+.research-wip .research-title {
+    --research-bullet: calc(0.28em + 0.55em);
+    padding-left: var(--research-bullet);
+    text-indent: calc(var(--research-bullet) * -1);
+}
+
+.research-wip .research-title::before {
+    margin-left: 0;
+}
